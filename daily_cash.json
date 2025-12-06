@@ -1,0 +1,36 @@
+{
+  "individual": {
+    "upto_50_years": {
+      "base_si_upto_5_lakh": 300,
+      "base_si_5_to_15_lakh": 600,
+      "base_si_above_15_lakh": 1200
+    },
+    "51_to_60_years": {
+      "base_si_upto_5_lakh": 400,
+      "base_si_5_to_15_lakh": 800,
+      "base_si_above_15_lakh": 1600
+    },
+    "above_60_years": {
+      "base_si_upto_5_lakh": 500,
+      "base_si_5_to_15_lakh": 1000,
+      "base_si_above_15_lakh": 2000
+    }
+  },
+  "floater": {
+    "upto_50_years": {
+      "base_si_upto_5_lakh": 400,
+      "base_si_5_to_15_lakh": 800,
+      "base_si_above_15_lakh": 1600
+    },
+    "51_to_60_years": {
+      "base_si_upto_5_lakh": 500,
+      "base_si_5_to_15_lakh": 1000,
+      "base_si_above_15_lakh": 2000
+    },
+    "above_60_years": {
+      "base_si_upto_5_lakh": 600,
+      "base_si_5_to_15_lakh": 1200,
+      "base_si_above_15_lakh": 2400
+    }
+  }
+}
