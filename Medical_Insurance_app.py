@@ -586,18 +586,6 @@ st.markdown("Select policy type and enter full details. For floater, enter detai
 
 policy_type = st.radio("Policy type", ("Individual", "Floater"))
 
-# policy-level inputs (some are used for ML columns)
-# with st.expander("Policy-level inputs (plan / cost fields)"):
-#     plan_type = st.selectbox("Plan Type", ["HMO","PPO","POS","Standard"], index=3)
-#     network_tier = st.selectbox("Network Tier", ["Bronze","Silver","Gold","Platinum"], index=1)
-#     deductible = st.number_input("Deductible", 0, 100000, 1000)
-#     copay = st.number_input("Copay", 0, 10000, 0)
-#     policy_term_years = st.number_input("Policy Term Years", 1, 30, 1)
-#     policy_changes_last_2yrs = st.number_input("Policy changes in last 2 years", 0, 10, 0)
-#     provider_quality = st.number_input("Provider quality (1-5)", 1.0, 5.0, 3.5)
-
-# number of members
-# num_members = st.number_input("Number of members on policy (1-10)", min_value=1, max_value=10, value=1)
 
 # number of members
 if policy_type == "Individual":
@@ -860,6 +848,6 @@ if st.button("Calculate premium & Predict claim"):
     except Exception as e:
         st.error(f"Regressor error: {e}")
 
-    st.success("Done — annual_premium (ex-GST) is passed to the models as 'annual_premium' feature.")
+    st.success("Done — annual_premium is passed to the models as 'annual_premium' feature.")
 
 # End of app.py
